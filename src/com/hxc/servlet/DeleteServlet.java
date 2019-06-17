@@ -1,3 +1,4 @@
+/*
 package com.hxc.servlet;
 
 import java.io.IOException;
@@ -14,8 +15,10 @@ import com.hxc.dao.DaoImpl.UserDaoImpl;
 public class DeleteServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        System.out.println("这是删除用户的servlet==========================");
         doPost(request, response);
     }
+
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -24,12 +27,13 @@ public class DeleteServlet extends HttpServlet {
 
         UserDao ud = new UserDaoImpl();
 
-        if(ud.delete(userId)){
-            request.setAttribute("xiaoxi", "删除成功");
+        if (ud.delete(userId)) {
+            request.setAttribute("hxc", "删除成功");
             request.getRequestDispatcher("/Searchall").forward(request, response);
-        }else{
+        } else {
             response.sendRedirect("index.jsp");
         }
     }
 
 }
+*/

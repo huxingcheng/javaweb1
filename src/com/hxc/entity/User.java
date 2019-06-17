@@ -2,8 +2,8 @@ package com.hxc.entity;
 
 public class User {
     private int id;
-    private String username;
-    private String password;
+    private String name;
+    private String pwd;
     private String sex;
     private String hobbys;
     private String phone;
@@ -21,20 +21,20 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPwd() {
+        return pwd;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
 
     public String getSex() {
@@ -81,8 +81,8 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", pwd='" + pwd + '\'' +
                 ", sex='" + sex + '\'' +
                 ", hobbys='" + hobbys + '\'' +
                 ", phone='" + phone + '\'' +
@@ -91,3 +91,4 @@ public class User {
                 '}';
     }
 }
+

@@ -12,50 +12,110 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <servlet><!--servlet类路径配置-->
+
+
+    <servlet>
         <servlet-name>DengluServlet</servlet-name>
         <servlet-class>com.hxc.servlet.DengluServlet</servlet-class>
     </servlet>
+
     <servlet>
         <servlet-name>ZhuceServlet</servlet-name>
         <servlet-class>com.hxc.servlet.ZhuceServlet</servlet-class>
     </servlet>
+
     <servlet>
         <servlet-name>Searchall</servlet-name>
         <servlet-class>com.hxc.servlet.Searchall</servlet-class>
     </servlet>
+
     <servlet>
         <servlet-name>DeleteServlet</servlet-name>
         <servlet-class>com.hxc.servlet.DeleteServlet</servlet-class>
     </servlet>
-    <servlet>
+
+    <!--<servlet>
         <servlet-name>UpdateServlet</servlet-name>
         <servlet-class>com.hxc.servlet.UpdateServlet</servlet-class>
+    </servlet>-->
+
+    <servlet>
+        <servlet-name>DeleteInfoServlet</servlet-name>
+        <servlet-class>com.hxc.servlet.DeleteInfoServlet</servlet-class>
     </servlet>
+
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>com.hxc.servlet.AddServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ModifyInfoServlet</servlet-name>
+        <servlet-class>com.hxc.servlet.ModifyInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ModifyGoodsInfoServlet</servlet-name>
+        <servlet-class>com.hxc.servlet.ModifyGoodsInfoServlet</servlet-class>
+    </servlet>
+
+
 
     <servlet-mapping><!--servlet类映射配置-->
         <servlet-name>DengluServlet</servlet-name>
         <url-pattern>/DengluServlet</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>ZhuceServlet</servlet-name>
         <url-pattern>/ZhuceServlet</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>Searchall</servlet-name>
         <url-pattern>/Searchall</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>DeleteServlet</servlet-name>
         <url-pattern>/DeleteServlet</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
+
+    <!--<servlet-mapping>
         <servlet-name>UpdateServlet</servlet-name>
         <url-pattern>/UpdateServlet</url-pattern>
+    </servlet-mapping>-->
+
+    <servlet-mapping>
+        <servlet-name>DeleteInfoServlet</servlet-name>
+        <url-pattern>/DeleteInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/AddServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ModifyInfoServlet</servlet-name>
+        <url-pattern>/ModifyInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ModifyGoodsInfoServlet</servlet-name>
+        <url-pattern>/ModifyGoodsInfoServlet</url-pattern>
     </servlet-mapping>
 
 
     <welcome-file-list>
         <welcome-file>denglu.jsp</welcome-file>
     </welcome-file-list>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+            <taglib-location>/WEB-INF/c.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
 </web-app>

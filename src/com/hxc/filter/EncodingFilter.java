@@ -8,14 +8,16 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-public class EncodingFilter implements Filter{
-    public EncodingFilter(){
+public class EncodingFilter implements Filter {
+    public EncodingFilter() {
         System.out.println("过滤器构造");
     }
+
     public void destroy() {
         System.out.println("过滤器销毁");
     }
-    public void doFilter(ServletRequest request, ServletResponse response,FilterChain chain) throws IOException, ServletException {
+
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         request.setCharacterEncoding("utf-8"); //将编码改为utf-8
         response.setContentType("text/html;charset=utf-8");
         chain.doFilter(request, response);

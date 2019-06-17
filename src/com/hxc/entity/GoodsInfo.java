@@ -4,7 +4,7 @@ public class GoodsInfo {
     private int id;
     private String goodsInfo_name;
     private String goodsInfo_pic;
-    private Double goodsInfo_price;
+    private String goodsInfo_price;
     private String goodsInfo_description;
     private String goods_stock;
 
@@ -35,11 +35,11 @@ public class GoodsInfo {
         this.goodsInfo_pic = goodsInfo_pic;
     }
 
-    public Double getGoodsInfo_price() {
+    public String getGoodsInfo_price() {
         return goodsInfo_price;
     }
 
-    public void setGoodsInfo_price(Double goodsInfo_price) {
+    public void setGoodsInfo_price(String goodsInfo_price) {
         this.goodsInfo_price = goodsInfo_price;
     }
 
@@ -70,4 +70,5 @@ public class GoodsInfo {
                 ", goods_stock='" + goods_stock + '\'' +
                 '}';
     }
+
 }
